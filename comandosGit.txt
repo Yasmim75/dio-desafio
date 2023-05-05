@@ -1,0 +1,43 @@
+Git config 
+A primeira coisa que você deve fazer quando instalar o Git é definir o seu nome de usuário e endereço de e-mail. Isso é importante porque todos os commits no Git utilizam essas informações, e está imutavelmente anexado nos commits que você realiza:
+
+
+git config --global user.name "nome"
+git config --global user.email email@example.com
+
+Você só precisará fazer isso uma vez caso passe a opção --global, pois o Git sempre usará essa informação para qualquer coisa que você faça nesse sistema.
+Caso você queira sobrepor estas com um nome ou endereço de e-mail diferentes para projetos específicos, você pode executar o comando sem a opção --global quando estiver no próprio projeto.
+
+git init (criando o projeto)
+
+Caso você esteja iniciando o monitoramento de um projeto existente com Git, você precisa ir para o diretório do projeto e digitar.
+
+git rm ( REMOVENDO ARQUIVOS)
+
+git push ( EMOURRANDO SEUS COMMITS)
+
+git mv (MOVENDO ARQUIVOS)
+
+git add (gravando alterações)
+
+git status ( varificando o status)
+
+git diff ( verificando mudanças)
+
+Se o comando git status for muito vago — você quer saber exatamente o que você alterou, não apenas quais arquivos foram alterados — você pode utilizar o comando
+
+git commit ( commits)
+
+Armazena o conteúdo atual do índice em um novo commit, juntamente com uma mensagem de registro do usuário que descreve as mudanças.
+Se usa o commit depois de já ter feito o git add, para fazer o commit:
+git commit -m "Mensagem"
+
+Para commitar também os arquivos versionados mesmo não estando no Stage basta adicionar o parâmetro -a:
+git commit -a -m "Mensagem"
+
+Refazendo commit quando esquecer de adicionar um arquivo no Stage:
+git commit -m "Mensagem" --amend
+
+ATENÇÃO
+O amend é destrutivo e só deve ser utilizado antes do commit ter sido enviado ao servidor remoto.
+
